@@ -1,113 +1,274 @@
 <!DOCTYPE html>
+<html lang="">
 
-<!--  comment for notes in doc and cant be seen in web -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
 
-<html>
+        .main-container {
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            z-index: -10;
+        }
 
-   <head>
-<title> Scotty  </title>
-        </head>
-        
-        <body>
-      This is a portfolio for web tech  
-            
-            <p>
-      
-            <a href="gimppages/gimp1.html"><img style="width: 300px;" src="Lesson1.png"> </a>
-            
-            </p>
-      
-   
-         <p> 
-          <a href="gimppages/Gimp2.html"><img style="width: 300px;" src="lesson2.png"></a> 
-            
-            </p>
-   <p>
-            
-    <a href="gimppages/Gimp3.html"><img style="width: 300px;" src="lesson3.png"></a>        
-            </p>
-   <p>
-            
-            
-   <a href="gimppages/Gimp4.html"> <img style="width: 300px;" src="Lesson4.png"></a>         
-            
-            </p>
-     <p> 
-            <a href="gimppages/Gimp5.html"> <img style="width: 300px;" src="lesson5.png"></a>
-            
-            
-            
-            </p>
-     <p>
-            
-         <a href="gimppages/Gimp6.html"> <img style="width: 300px;" src="lesson6.png"> </a>   
-            
-            </p>
-            <p>
-            
-            
-            
-            <a href="gimppages/Gimp7.html"> <img style="width: 300px;" src="Lesson7.png"></a>
-            
-            
-            </p>
-            
-            <p>
-            
-            
-            <a href="gimppages/Gimp8.html"> <img style="width: 300px;" src="Lesson8.png"></a>
-            
-            
-            </p>
-           <p>
-            
-            
-            <a href="gimppages/Gimp9.html"> <img style="width: 300px;" src="Lesson9.png"></a>
-            
-            </p>
-           <p> 
-            
-            <a href="gimppages/Gimp10.html"> <img style="width: 300px;" src="Lesson10.png"></a>
-            
-            
-            </p>
-            
-            
-            
-            
-            
-         
-            
-            
-            
-            <div>
-            
-            <h1> HTML Labs</h1>
-           
-                
-                 
-                <a href="HTMLpages/guided1.HTML">Guided 1</a> <br>
-            <a href="HTMLpages/Lab1-1.html">Lab 1-1</a>  <br>
-              <a href="HTMLpages/Lab1-3.html">Lab 1-3</a>    <br>
-                <a href="HTMLpages/Lab1-4.html">Lab 1-4</a>  <br>
-                 <a href="HTMLpages/Lab1-5.html">Lab 1-5</a> <br>
-                 <a href="HTMLpages/Guided2.html">Guided 2</a> <br>
-                 <a href="HTMLpages/Lab2-1.html">Lab 2-1</a> <br>
-                 <a href="HTMLpages/Lab2-2.html">Lab 2-2</a> <br>
-                 <a href="HTMLpages/guided3.html">Guided 3</a> <br>
-                 <a href="HTMLpages/guided3b.html">Guided 3b</a> <br>
-                 <a href="HTMLpages/Lab3-1.html">Lab 3-1</a> <br>
-                 <a href="HTMLpages/Guided4.html">Guided 4</a> <br>
-                 <a href="HTMLpages/Lab4-1.html">Lab 4-1</a> <br>
-                 <a href="HTMLpages/Lab4-2.html">Lab 4-2</a> <br>
-                 <a href="HTMLpages/premier.html">Premier Leauge</a><br> 
-                 <a href="HTMLpages/premierstyle.css">Premier style.css</a><br>
-                 <a href="HTMLpages/style.css">Style.css</a> <br>
-                
-            </div>
-            
-            
-            
-    
-  </body>
-</html> 
+        .circles-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0
+        }
+
+        li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background-color: mintcream;
+            bottom: -150px;
+            animation-name: bubble;
+            animation-duration: 25s;
+            animation-direction: normal;
+            animation animation-timing-function: linear;
+            animation-iteration-count: infinite
+        }
+
+        @keyframes bubble {
+            0% {
+                transform: translateY(0)rotate(0deg);
+                opacity: 0.8;
+                border-radius: 0
+            }
+
+            100% {
+                transform: translateY(-1000px)rotate(720deg);
+                opacity: 0;
+                border-radius: 100%
+            }
+        }
+
+        .circle1 {
+            left: 40%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 2s
+        }
+
+        .circle2 {
+            left: 70%;
+            width: 60px;
+            height: 100px;
+            animation-delay: 1.2s
+        }
+
+        .circle3 {
+            left: 20%;
+            width: 50px;
+            height: 60px;
+            animation-delay: 1s
+        }
+
+        .circle4 {
+            left: 90%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 1s
+        }
+
+        .circle5 {
+            left: 23%;
+            width: 100px;
+            height: 80px;
+            animation-delay: 2s
+        }
+
+        .circle6 {
+            left: 10%;
+            width: 80px;
+            height: 70px;
+            animation-delay: 1.5s
+        }
+
+        .circle7 {
+            left: 57%;
+            width: 89px;
+            height: 90px;
+            animation-delay: 2s
+        }
+
+        .circle1 {
+            left: 35%;
+            width: 85px;
+            height: 60px;
+            animation-delay: 1.4s
+        }
+
+        .circle9 {
+            left: 85%;
+            width: 40px;
+            height: 60px;
+            animation-delay: 1.7s
+        }
+
+        .content-card {
+            width: 300px;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 15px;
+            background-color: dimgray;
+            text-align: center;
+            color: white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 1s ease-in-out;
+            height: 300px;
+            float: right;
+
+        }
+        .content-title{font-family: monospace;font-size: 40px}
+
+        .content-wrapper {width: 900px}
+
+        .content-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+        }
+        .content-container{width: 100%;height: 100vh;margin:top bottom;margin: 50px}
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="hello-text"></div>
+        <div class="name-text"></div>
+
+
+    </header>
+
+    <div class="main-container" class="grow">
+        <ul class="circles-container">
+
+
+
+
+            <li class="circle1"></li>
+            <li class="circle2"></li>
+            <li class="circle3"></li>
+            <li class="circle4"></li>
+            <li class="circle5"></li>
+            <li class="circle6"></li>
+            <li class="circle7"></li>
+            <li class="circle8"></li>
+            <li class="circle9"></li>
+
+
+
+
+
+
+
+
+
+
+        </ul>
+
+
+    </div>
+    <div class="content-wrapper"><div class="content-container">
+        <h1 class="content-title">HTML/CSS Labs</h1>
+        <div class="content-card">
+            <a href="HTMLpages/premier.html"><img src="HTMLpages/Annotation%202019-10-31%20103021.png" width="275px">
+            </a>
+            <div class="content-text">Premeir Leauge Lab</div>
+
+
+        </div>
+
+        <div class="content-card">
+            <a href="HTMLpages/Lab4-1.html"><img src="HTMLpages/HomeDepot4-1.png" width="275px"></a>
+            <div class="content-text">Lab 4-1</div>
+
+
+        </div>
+        <div class="content-card">
+            <a href="HTMLpages/Lab1-3.html"><img src="HTMLpages/lab1-3.png" width="275px"></a>
+            <div class="content-text">Lab 1-3</div>
+
+
+        </div>
+        <div class="content-card">
+            <a href="HTMLpages/Lab2-1.html"><img src="HTMLpages/ul2-1.png" width="275px"></a>
+            <div class="content-text">Lab 2-1</div>
+
+
+        </div>
+        <div class="content-card">
+            <a href="HTMLpages/Lab4-2.html"><img src="HTMLpages/lab4-2.png" width="275px"></a>
+            <div class="content-text">Lab 4-2</div>
+
+
+        </div>
+        <div class="content-card">
+            <a href="HTMLpages/Lab10-1.html"><img src="HTMLpages/10-1.gif" width="275px"></a>
+            <div class="content-text">Lab 10-1</div>
+
+        </div>
+    </div>
+
+   <div class="content-container">
+
+        <h1 class="content-title">GIMP Labs</h1>
+
+
+        <div class="content-card">
+<a href="images/Lab10-5.jpg"><img src="images/Lab10-5.jpg" width="275px"></a>
+            <div class="content-text">Lab 10-5</div>
+        </div>
+
+        <div class="content-card">
+<a href="images/lab10-12.png"><img src="images/lab10-12.png" width="275px"></a>
+            <div class="content-text">Lab 10-12</div>
+        </div>
+        <div class="content-card">
+<a href="images/Lab10-1.png"><img src="images/Lab10-1.png" width="275px"></a>
+            <div class="content-text">Lab 10-1</div>
+        </div>
+        <div class="content-card">
+<a href="images/lab1-2.gif"><img src="images/lab1-2.gif" width="275px"></a>
+            <div class="content-text">Lab1-2</div>
+        </div>
+        <div class="content-card">
+<a href="images/lab3-2b.jpg"><img src="images/lab3-2b.jpg" width="275px"></a>
+            <div class="content-text">Lab 3-2</div>
+        </div>
+        <div class="content-card">
+<a href="images/lab7-4.png"><img src="images/lab7-4.png" width="275px"></a>
+            <div class="content-text">Lab 7-4</div>
+        </div>
+
+</div>
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
